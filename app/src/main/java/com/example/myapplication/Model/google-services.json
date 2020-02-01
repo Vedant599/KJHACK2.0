@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "442602982525",
+    "firebase_url": "https://hackit-3d6f8.firebaseio.com",
+    "project_id": "hackit-3d6f8",
+    "storage_bucket": "hackit-3d6f8.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:442602982525:android:2d8e8d325e6d23f56eb514",
+        "android_client_info": {
+          "package_name": "com.example.myapplication"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "442602982525-9b3k0jelqd31d2b4ck81oceci799l4vc.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.myapplication",
+            "certificate_hash": "d8ecb94628d168f8a8f031b65da5927bd2c28b3d"
+          }
+        },
+        {
+          "client_id": "442602982525-gari62bjiumd739lqillvs4j8jimn9t7.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAAcXjTEjuMzYPdtYykAZGtxd7jrxTcNoY"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "442602982525-gari62bjiumd739lqillvs4j8jimn9t7.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
