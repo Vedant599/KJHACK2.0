@@ -7,7 +7,10 @@ import com.google.android.material.snackbar.Snackbar;
 
 import android.view.View;
 
+import androidx.annotation.NonNull;
+import androidx.annotation.Nullable;
 import androidx.navigation.NavController;
+import androidx.navigation.NavDestination;
 import androidx.navigation.Navigation;
 import androidx.navigation.ui.AppBarConfiguration;
 import androidx.navigation.ui.NavigationUI;
@@ -20,6 +23,7 @@ import androidx.appcompat.app.AppCompatActivity;
 import androidx.appcompat.widget.Toolbar;
 
 import android.view.Menu;
+import android.widget.Toast;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -51,6 +55,23 @@ public class MainActivity extends AppCompatActivity {
         NavController navController = Navigation.findNavController(this, R.id.nav_host_fragment);
         NavigationUI.setupActionBarWithNavController(this, navController, mAppBarConfiguration);
         NavigationUI.setupWithNavController(navigationView, navController);
+
+
+        navController.addOnDestinationChangedListener(new NavController.OnDestinationChangedListener() {
+            @Override
+            public void onDestinationChanged(@NonNull NavController controller, @NonNull NavDestination destination, @Nullable Bundle arguments) {
+                if(destination.getId()==R.id.nav_home)
+                {
+                    Toast.makeText(MainActivity.this, "In Home Fragment", Toast.LENGTH_SHORT).show();
+                }if(destination.getId()==R.id.nav_gallery)
+                {
+                    Toast.makeText(MainActivity.this, "In Gallery Fragment", Toast.LENGTH_SHORT).show();
+                }if(destination.getId()==R.id.nav_tools)
+                {
+                    Toast.makeText(MainActivity.this, "In Tools Fragment", Toast.LENGTH_SHORT).show();
+                }
+            }
+        });
     }
 
     @Override
