@@ -95,7 +95,7 @@ public class loginActivity extends AppCompatActivity {
                                     Paper.book().write(Prevalent.UserPasswordKey,password1);
                                     Paper.book().write(Prevalent.UserParentdbNameKey,ParentdbName);
                                 }
-                                startActivity(new Intent(loginActivity.this, MainActivity.class));
+                                startActivity(new Intent(loginActivity.this, Main2Activity.class));
                                 Toast.makeText(loginActivity.this, "Hi " + userdata.getName(), Toast.LENGTH_SHORT).show();
                                 finish();
                             }

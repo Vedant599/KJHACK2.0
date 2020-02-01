@@ -27,7 +27,7 @@ private Button Login,Register;
         String UserParentdbNameKey=Paper.book().read(Prevalent.UserParentdbNameKey);
         if(!(TextUtils.isEmpty(UserPhoneKey)&&TextUtils.isEmpty(UserPasswordKey))&&!TextUtils.isEmpty(UserParentdbNameKey))
         {
-            startActivity(new Intent(Home.this,MainActivity.class));
+            startActivity(new Intent(Home.this,Main2Activity.class));
             finish();
         }
         Register.setOnClickListener(new View.OnClickListener() {
