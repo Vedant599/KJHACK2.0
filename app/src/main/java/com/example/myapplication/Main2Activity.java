@@ -33,5 +33,12 @@ private Button Pie,Bar;
                 startActivity(intent);
             }
         });
+        Button button=findViewById(R.id.button);
+        button.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                startActivity(new Intent(Main2Activity.this,DatabaseAct.class));
+            }
+        });
     }
 }
